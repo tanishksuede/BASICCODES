@@ -1,0 +1,3 @@
+n = int(input("Enter a number: "))
+for el in range(1, 11, 1):
+    print( el * n )
