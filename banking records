@@ -1,0 +1,19 @@
+class Account:
+    def __init__(self, account_number, balance):
+        self.account_number = account_number
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+        print(f"Deposited {amount}. New balance is {self.balance}.")
+
+    def withdraw(self, amount):
+        self.balance -= amount
+        print(f"Withdrew {amount}. New balance is {self.balance}.")
+
+    def get_balance(self):
+        return self.balance
+
+primary_account = Account("123456789", 1000)
+primary_account.deposit(500)
+primary_account.withdraw(200)
