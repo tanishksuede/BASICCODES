@@ -1,0 +1,15 @@
+import random
+
+target = random.randint(1, 100)
+
+while True:
+    userChoice = int(input("Enter a number between 1 and 100: "))
+    if(userChoice == target):
+        print("You guessed it!")
+        break
+    elif(userChoice < target):
+        print("Too low! Try again.")
+    else:
+        print("Too high! Try again.")
+
+print("Game Over")
