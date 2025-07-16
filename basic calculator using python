@@ -1,0 +1,23 @@
+#basic calculator
+
+class Calculator:
+    pass
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+op = input("Enter operation (+, -, *, /): ")
+
+if op == '+':
+    result = a + b
+elif op == '-':
+    result = a - b
+elif op == '*':
+    result = a * b
+elif op == '/':
+    if b != 0:
+        result = a / b
+    else:
+        result = "Error: Division by zero is not allowed."
+
+print(f"The result of {a} {op} {b} is: {result}")
+
