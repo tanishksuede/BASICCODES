@@ -1,0 +1,13 @@
+import requests
+
+
+search = input("Enter the search term: ")
+url = f"https://newsapi.org/v2/everything?q={search}&apiKey=b3e867441b414a3a90344ca14bfeb421"
+print(url)
+r = requests.get(url)
+
+data = r.json()
+articles = data["articles"]
+
+for article in articles:
+    print(article["title"], article["url"])
